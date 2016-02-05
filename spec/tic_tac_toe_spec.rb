@@ -1,5 +1,6 @@
-# spec/spec_helper.rb
-require_relative "../lib/tic_tac_toe.rb"
+
+
+require 'spec_helper'
 
 describe TicTacToe do
   it 'has a version number' do
