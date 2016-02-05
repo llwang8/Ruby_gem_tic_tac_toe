@@ -14,23 +14,23 @@ module TicTacToe
 				expect {Player.new(input)}.to_not raise_erroe
 			end
 		end
-	end
 
-	context "#color" do
-		it "returns the color" do
-			input = { color: "X", name: "Someone"}
-			player = Player.new(input)
-			expect (player.color).to eq "X"
+		context "#color" do
+			it "returns the color" do
+				input = { color: "X", name: "Someone"}
+				player = Player.new(input)
+				expect (player.color).to eq "X"
+			end
 		end
-	end
 
-	context "#name" do
-		it "returns the player's name" do
-			input = {color: "X", name: "Someone"}
-			player = Player.new(input)
-			expect (player.name).to eq "Someone"
+		context "#name" do
+			it "returns the player's name" do
+				input = {color: "X", name: "Someone"}
+				player = Player.new(input)
+				expect (player.name).to eq "Someone"
+			end
 		end
+
+
 	end
-
-
 end
